@@ -27,6 +27,7 @@ const ReactElement = function (
 	return element;
 };
 // 实现JSX方法
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const jsx = (type: ElementType, config: any, ...maybeChildren: any) => {
 	let key: Key = null;
 	const props: Props = {};
